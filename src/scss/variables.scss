@@ -1,0 +1,111 @@
+@import '../scss/colors.scss';
+//button styling
+//active button styling
+.custombtn {
+    background-color: $theme-clr-imp;
+    color: $white;
+    border: 0px;
+    border-radius: 32px;
+    font-weight: 500;
+    padding: 8px 20px;
+    transition: all .5s;
+}
+
+.custombtn:hover,
+.custombtn:focus {
+    background-color: $theme-clr-btn;
+    color: $white;
+    outline: none !important;
+    box-shadow: none;
+}
+
+//passive button styling
+.custom-gray {
+    background: $off-white;
+    color: $dark-grey;
+    transition: all .5s;
+}
+
+.custom-gray:hover {
+    background: $very-light-grey;
+    color: $dark-grey;
+}
+
+.custom-gray:focus {
+    background: $very-light-grey;
+    color: $dark-grey;
+}
+
+//no records found class
+//$white container
+.wrapper-white-bg {
+    background: $white;
+    padding: 30px 15px;
+    display: flex;
+    margin: 0px 30px;
+    border-radius: 5px;
+    border: 1px solid $white1;
+}
+
+.pt-0 {
+    padding-top: 0px;
+}
+
+//no recrds found
+.text-center {
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 10em;
+    width: 90%;
+}
+
+.no-records {
+    color: $green;
+}
+
+//background-image
+$url: '../assets/images/bg.jpg';
+.image {
+    height: 50em;
+    background-size: cover;
+    width: auto;
+    background-image: url($url);
+    background-position: 50% 50%;
+    // position: fixed;
+    background-attachment: fixed;
+}
+
+//table
+.tableheader {
+    background-color: $white1;
+    color: $dark-grey;
+    padding: 6px;
+    border: 0px;
+}
+
+.tableheader th {
+    padding: 12px !important;
+    border: 0px !important;
+    vertical-align: middle;
+}
+
+.table>tbody>tr>td {
+    border-bottom: 1px solid $white;
+    vertical-align: middle;
+    padding: 12px;
+}
+
+.tabledata a:hover,
+.tabledata a:focus {
+    color: $black;
+    text-decoration: underline;
+}
+
+//toggle-button
+.toggle-btn {
+    padding: 0;
+    border: none;
+    background: none;
+}

@@ -1,0 +1,326 @@
+@import '../scss/colors.scss';
+$padding_value: 600px;
+.nopadding {
+    padding: 0px;
+}
+
+.navbar-default {
+    background-color: $white;
+    border: 0px;
+}
+
+#navmenu {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.16);
+}
+
+.topmenu ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.topmenu-left {
+    float: left;
+    margin-bottom: 1px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.sidebar-brand {
+    margin-left: 0px;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+.m-l220 {
+    /*    margin-left: 280px;*/
+    transition: all .4s ease 0s;
+}
+
+#logo {
+    height: 60px;
+    width: 200px;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.tog-btn {
+    background-color: transparent;
+    border: 0px transparent;
+}
+
+.topmenu-right {
+    float: right;
+    margin-bottom: 6px;
+}
+
+.left-log {
+    padding-right: -50px!important;
+}
+
+.topmenu-right li {
+    float: right;
+    margin: 5px;
+}
+
+.topmenu-right li a {
+    color: $white;
+    line-height: 45px;
+    font-size: 16px;
+}
+
+.topmenu-left li a {
+    color: $white;
+    font-size: 20px;
+}
+
+// side bar starts here
+.menubar {
+    top: 100px;
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    left: 0px;
+    z-index: 9999;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/$theme-clr+1,b65386+100 */
+    background: $theme-clr;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, $theme-clr 1%, $theme-clr-light 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $theme-clr 1%, $theme-clr-light 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $theme-clr 1%, $theme-clr-light 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    // filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='$theme-clr', endColorstr='$theme-clr-light', GradientType=0);
+    // /* IE6-9 */
+}
+
+.menubar li {
+    list-style-type: none;
+    border-bottom: 1px solid $theme-clr-very-light;
+    //    transition: .5s;
+}
+
+.menubar li a {
+    cursor: pointer;
+}
+
+.menubar li:hover {
+    background-color: $theme-clr-dark;
+}
+
+.profile-wrapper {
+    background-image: url('../assets/images/user-bg.jpg');
+    background-size: cover;
+    height: 190px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.profile-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-li1 {
+    border-bottom: 1px solid $light-grey;
+}
+
+.nav-active {
+    background-color: $white !important;
+    color: $theme-clr-imp !important;
+}
+
+.nav-active a {
+    color: $theme-clr-imp;
+    display: block;
+}
+
+.nav-active a:hover {
+    background-color: $white !important;
+    color: $theme-clr-imp;
+}
+
+//    .nav-active a:active {
+//        background: $white !important;
+//        color: $theme-clr-imp;
+//    }
+.profile {
+    width: 100px;
+    height: 100px;
+    background-image: url('../assets/images/profile.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 4px solid $off-white;
+}
+
+.username {
+    color: $white;
+    margin: 0px;
+    padding-top: 8px;
+    font-weight: 400;
+}
+
+.submenu {
+    color: $white;
+}
+
+.submenu a {
+    width: 100%;
+    font-size: 14px;
+    display: inline-block;
+    padding: 12px;
+    color: $white;
+    transition: .5s;
+}
+
+.submenu:hover {
+    background: $theme-clr-imp !important;
+    color: $white;
+}
+
+//    .submenu:acive {
+//        background: white !important;
+//        color: #803059;
+//    }
+.decoration {
+    color: $theme-clr;
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    position: fixed;
+    top: 20px;
+}
+
+//    .text-center {
+//        right: 0;
+//        left: 0;
+//        margin-right: auto;
+//        margin-left: auto;
+//        min-height: 10em;
+//        width: 90%;
+//    }
+//toggle-menu
+#wrapper {
+    transition: all .4s ease 0s;
+}
+
+#wrapper.active {
+    left: -250px;
+}
+
+.wrapper-white-bg {
+    background: $white;
+    padding: 30px 15px;
+    display: flex;
+    margin: 0px 30px;
+    border-radius: 5px;
+    border: 1px solid $white1;
+}
+
+#maincontent {
+    transition: all .4s ease 0s;
+    white-space: nowrap;
+    margin-top: 60px;
+    min-height: calc(100vh - 103px);
+}
+
+.p-l0 {
+    padding-left: 0px;
+}
+
+.logo {
+    height: 60px;
+    width: 200px;
+}
+
+.logo img {
+    padding-top: 10px;
+    padding-left: 35px;
+}
+
+.m-l220 {
+    /*    margin-left: 280px;*/
+    transition: all .4s ease 0s;
+}
+
+#panel2,
+#panel3,
+#panel1 {
+    display: none;
+}
+
+#d-arrow1,
+#d-arrow2,
+#d-arrow3 {
+    position: absolute;
+    right: 20px;
+    font-size: 25px!important;
+    top: 6px;
+}
+
+.sidebtn {
+    width: 100%;
+    font-size: 14px;
+    display: inline-block;
+    padding: 12px;
+    color: $dark-grey;
+    transition: .5s;
+    color: $white;
+}
+
+.sidebtn:hover {
+    background-color: $theme-clr-imp !important;
+    color: $white;
+    text-decoration: none;
+}
+
+.sidebtn:active {
+    background-color: $white !important;
+    color: $theme-clr-imp;
+    text-decoration: none;
+}
+
+//top-right side
+.topmenu-right {
+    margin-bottom: 6px;
+    margin-top: 20px;
+    font-size: 25px;
+    opacity: 0.7;
+}
+
+.icon1 {
+    padding-left: 650px;
+}
+
+.icon2,
+.icon3 {
+    padding-left: 20px;
+}
+
+.topmenu-right li {
+    float: left;
+    margin: 5px;
+}
+
+.topmenu-right li a {
+    color: $white;
+    line-height: 45px;
+    font-size: 16px;
+}
+
+.p-r25 {
+    padding-right: 25px!important;
+}

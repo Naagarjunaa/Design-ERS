@@ -1,0 +1,35 @@
+<div class="menubar  nopadding" id="wrapper" *ngIf="wrapper">
+
+    <div>
+        <div class="profile-wrapper">
+            <div class="profile-overlay">
+                <div>
+                    <div class="profile"></div>
+                    <h4 class="username">Bapi Sarkar</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="show">
+
+        <ul class="nopadding">
+            <li [ngClass]="{'nav-active': selectedItem == 1,'submenu':true}"><a (click)="toggleactiveMenu(1)" class="sidebtn"><i class="fa fa-home"></i>Home</a></li>
+            <li [ngClass]="{'nav-active': selectedItem == 2,'submenu':true}"><a (click)="toggleactiveMenu(2)" class="sidebtn"><i class="fa fa-calendar"></i>Session</a></li>
+            <li [ngClass]="{'nav-active': selectedItem == 3,'submenu':true}"><a (click)="toggleactiveMenu(3)" class="sidebtn"><i class="fa fa-search"></i>Employee</a></li>
+            <li [ngClass]="{'nav-active': selectedItem == 4,'submenu':true}"><a (click)="toggleactiveMenu(4)" class="sidebtn"><i class="fa fa-table" ></i>Template</a></li>
+            <li [ngClass]="{'nav-active': selectedItem == 5,'submenu':true}"><a (click)="toggleactiveMenu(5)" class="sidebtn"><i class="fa fa-pencil-square-o"></i>Give Review</a></li>
+            <li [ngClass]="{'nav-active': selectedItem == 6,'submenu':true}"><a (click)="toggleactiveMenu(6)" class="sidebtn"><i class="fa fa-level-down"></i>Re-evaluation Request</a></li>
+        </ul>
+    </div>
+
+    <div *ngIf="!show">
+
+        <ul class="nopadding">
+            <li [ngClass]="{'nav-active': selectedItem == 1,'submenu':true}"><a (click)="toggleactiveMenu(1)" class="sidebtn"><i class="fa fa-home"></i>Home</a></li>
+            <li [ngClass]="{'nav-active': selectedItem == 2,'submenu':true}"><a (click)="toggleactiveMenu(2)" class="sidebtn"><i class="fa fa-edit"></i>My Review</a></li>
+            <li [ngClass]="{'nav-active': selectedItem == 3,'submenu':true}"><a (click)="toggleactiveMenu(3)" class="sidebtn"><i class="fa fa-bar-chart"></i>Review Analysis</a></li>
+        </ul>
+    </div>
+
+</div>
